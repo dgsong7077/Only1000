@@ -1,15 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UsersModule } from './users/users.module';
-import { MongooseModule } from '@nestjs/mongoose';
+import { SentencesModule } from './sentences/sentences.module'; // 정확한 경로로 임포트
 
 @Module({
-  imports: [
-    MongooseModule.forRoot('mongodb://localhost/nest'),  // MongoDB 연결 설정
-    UsersModule,
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [SentencesModule], // SentencesModule이 한 번만 임포트되도록 확인
 })
 export class AppModule {}
