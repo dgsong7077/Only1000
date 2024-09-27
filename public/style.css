@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  
